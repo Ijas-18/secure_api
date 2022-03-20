@@ -5,10 +5,8 @@ from rest_framework.mixins import CreateModelMixin
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import UserSerializer
-from rest_framework.authentication import SessionAuthentication,BasicAuthentication
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
-# from django.contrib.sites.models import Site
 import requests
 from django.urls import reverse
 import os
